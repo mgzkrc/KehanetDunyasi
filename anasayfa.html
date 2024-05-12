@@ -9,7 +9,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
-
+<script language=JavaScript >
+  document.oncontextmenu = function(){return false}
+  if(document.layers)
+  {
+    window.captureEvents(Event.MAUSEDOWN);
+    window.onmousedown = function(e)
+    {
+      if(e.target==document)return false;
+    }
+  }
+  else
+  {
+    document.onmousedown = function(){return false}
+  }
+    </script>
   <style>
     body{
         background-image: url(logo1.jpg);
@@ -76,21 +90,7 @@
   <!-- Menus will work without this javascript file. It is used only for extra
        effects, improved usability, compatibility with very old web browsers
        and support for touch screen devices. -->
-  <script language=JavaScript type="text/javascript" src="buton_files/mbjsmbmcp.js">
-document.oncontextmenu = function(){return false}
-if(document.layers)
-{
-  window.captureEvents(Event.MAUSEDOWN);
-  window.onmousedown = function(e)
-  {
-    if(e.target==document)return false;
-  }
-}
-else
-{
-  document.onmousedown = function(){return false}
-}
-  </script>
+  <script type="text/javascript" src="buton_files/mbjsmbmcp.js"></script>
   
   <br>
   <br>
