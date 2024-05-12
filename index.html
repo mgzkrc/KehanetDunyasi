@@ -1,98 +1,191 @@
 <!DOCTYPE html>
-<link rel="icon" href="İcO1.ico" type="image/x-icon" />
-<html lang="en">
+<html>
+  <link rel="icon" href="site.ico" type="image/x-icon" />
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.G.Z.KEHANET DÜNYASI</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
+	<title>
+	Giriş Sayfası
+	</title>
+	
+<style>
+        * {
+            box-sizing: border-box;
+        }
 
-  <style>
-    body{
-        background-image: url(logo1.jpg);
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        body {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
 
-    }
-    .p1{
-      width: 100%;
-      height: 240px;
-      border-radius: 20px;
-      background-color: #55555555;
-    }
-    .f1{
-      font-size: 110px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      color: aqua;
-      position: relative;
-      line-height: 200%;
-    }
-    .logo{
-      width: 170px;
-      height: 170px;
-      position: relative;
-      left: 47%;
-    }
-    .s1{
-      width: 100%;
-      height: 210px;
-      border-radius: 20px;
-      background-color: #000;
-      position: relative;
-      top: 370px;
-    }
-    
+        #video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
 
+        #videoIcerik {
+            position: fixed;
+            text-align: center;
+            background: none;
+            color: aqua;
+            width: 100%;
+            margin-top: 120px;
+        }
 
-  </style>
+        #buton {
+            width: 200px;
+            height: 120px;
+            font-size: 18px;
+            padding: 1px;
+            border: none;
+            background-image: url(web32.jpg);
+            background-repeat: no-repeat;
+            background-attachment: cover;   
+            background-size: 100% 100%;
+            color: aqua;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /*#buton:hover {
+            background: #ddd;
+            color: black;
+        }*/
+                @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap";
+
+.animation_text h1 {
+font-family:"Poppins",Sans-serif;
+text-align:center;
+color: aqua;
+font-size:40px;
+font-weight:400;
+line-height:70px;
+}
+
+.animation_text h1 span {
+color: aqua;
+}
+
+@media(max-width:768px) {
+.animation_text h1 {
+font-size:30px
+}
+} 
+    </style>
+    <script>
+    	var Text = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+Text.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 0);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 2);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-words');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new Text(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+};
+
+    </script>
 </head>
 <body>
 
-  <font face="thoma" color="red">
-    <center>Telif Hakkı &copy; 2024 MGZ.K.R.C</center>
-  </font>
-  
-  <div id="mbmcpebul_wrapper" style="max-width: 67px;">
-    <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
-    <li class="first_button last_button"><div class="buttonbg gradient_button gradient19"><div class="arrow"><a>MENÜ</a></div></div>
-      <ul>
-        <li><a href="index.html">ANASAYFA</a></li>
-      <li><a href="hakkımızda.html">HAKKIMIZDA</a></li>
-      <li><a class="with_arrow" href="">GALERİ</a>
-        <ul>
-        <li><a href="videolar.html">VİDEOLAR</a></li>
-        <li><a href="resimler.html">RESİMLER</a></li>
-        </ul></li>
-      <li><a href="ritüeller.html">RİTÜELLER</a></li>
-      <li><a href="falçeşitleri.html">FAL ÇEŞİTLERİ</a></li>
-      <li><a href="iletişim.html">İLETİŞİM</a></li>
-      </ul></li>
-    </ul>
-  </div>
-  <!-- Menus will work without this javascript file. It is used only for extra
-       effects, improved usability, compatibility with very old web browsers
-       and support for touch screen devices. -->
-  <script type="text/javascript" src="mbjsmbmcp.js"></script>
-  
-  <br>
-  
-  
- 
- 
-  <div class="s1">
-<marquee  direction="left" width="100%"
-scrollamount="8" height="210"
-onmouseout="this.start()" 
-onmouseover="this.stop()">
-<font class="f1" face="thoma" color="red">
-  TEST TEST TEST
-</font>  
-</marquee>
-  </div>
-</body>
+<div id="videoIcerik">
+  <video autoplay muted loop id="video">
+    <source src="video12.mp4" type="video/mp4">
+    Tarayıcınız HTML5 videosunu desteklemiyor.
+</video>
+<div id="videoIcerik">
+    <div class="animation_text">
+         <h1>
+             <span class="typewrite"
+                   data-period="1800"
+                   data-words='[" Merhaba CreaTiveCode Giriş Sayfasına Hoş Geldiniz "]''[" Merhaba CreaTiveCode Giriş-Sayfasına Hoş Geldiniz "]'>
+             </span>
+         </h1>
+     </div>
+      <!-- <p>Alt içerik ve açıklamalar</p> -->
+    
+</div>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="videoIcerik">
+    
+    <!-- <p>Alt içerik ve açıklamalar</p> -->
+    <button id="buton" onclick="durBasla()">Anasayfaya Gitmek için 
+      <a href="anasayfa.html">
+        <br>
+        <br>
+      Buraya Tıklayın</a>
+    </button>
+</div>
+
+  
+     
+
+<!-- <script>
+    var video = document.getElementById("video");
+    var btn = document.getElementById("buton");
+
+    function durBasla() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Dur";
+        } else {
+            video.pause();
+            btn.innerHTML = "Oynat";
+        }
+    }
+</script> -->
+
+    
+
+    
+</body>
 </html>
