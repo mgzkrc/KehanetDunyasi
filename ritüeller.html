@@ -9,8 +9,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
-
-</head>
+    <script language=JavaScript >
+  document.oncontextmenu = function(){return false}
+  if(document.layers)
+  {
+    window.captureEvents(Event.MAUSEDOWN);
+    window.onmousedown = function(e)
+    {
+      if(e.target==document)return false;
+    }
+  }
+  else
+  {
+    document.onmousedown = function(){return false}
+  }
+    </script>
 <style>
 
 body{
@@ -37,6 +50,8 @@ body{
 }
 
 </style>
+</head>
+
 <div id="mbmcpebul_wrapper" style="max-width: 67px;">
     <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
     <li class="first_button last_button"><div class="buttonbg gradient_button gradient19"><div class="arrow"><a>MENÜ</a></div></div>
