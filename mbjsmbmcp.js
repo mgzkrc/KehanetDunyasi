@@ -29,7 +29,7 @@ var aJ=document.getElementById(d+"ebul_table");var aL=document.getElementById(d+
  MenuName: "mbmcp",
  DefaultDirectionX: 1,
  HamburgerEnabled: true,
- HamburgerFromWidth: 500,
+ HamburgerFromWidth: -1,
  HamburgerAtPageTop: true
 });
 // Created with Easy Button & Menu Maker
