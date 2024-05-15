@@ -73,6 +73,100 @@ color: aqua;
 font-size:30px
 }
 } 
+
+.button1{
+       display: inline-block;
+       text-decoration: none;
+       color: #fff;
+       padding: 3px;
+       border-radius: 50%;
+       position: relative;
+       top: 210px;
+       overflow: hidden;
+      }
+
+      .button1:hover{
+        box-shadow: 0 0 0 px #03e9f4,
+                    0 0 0 10px #03e9f4,
+                    0 0 0 20px #03e9f4,
+                    0 0 0 28px #03e9f4;
+        color: aqua;
+
+      }
+
+      .button1::before{
+          content: "";
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background:
+          linear-gradient(240deg,
+          #4fcf70, #FF66CC,
+        #a767e5, #99FF33,
+        #00FFFF,#FF6600,
+        #3366FF,#00FF99);
+        background-size: 50% 100%;
+        border-radius: 50%;
+
+      }
+      .button1:hover::before{
+          animation: animate_border
+          2s linear infinite;
+      }
+
+      .button1 span{
+          display: block;
+          background: #222222;
+          padding: 30px 20px;
+          border-radius: 50px;
+          position: relative;
+          z-index: 2;
+      }
+     .span1:hover{
+     background-image: url(web34.jpg);
+     background-attachment: cover;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     }
+
+   div.pano{
+       width: 100%;
+       height: 60px;
+       border: solid blue;
+       border-radius: 20px;
+       position: relative;
+       overflow: hidden;
+       letter-spacing: 4px;
+
+   }
+
+   @keyframes animate_border{
+       100%{
+           transform: rotate(0deg);
+       }
+       100%{
+           transform: rotate(360deg);
+       }
+
+   }
+
+   div.logo{
+       width: 100%;
+       height: 120px;
+       border: solid #FF0033;
+       border-radius: 20px;
+
+   }
+   .font1{
+    letter-spacing: 2px;
+   }
+
+
+
+
     </style>
     <script>
     	var Text = function(el, toRotate, period) {
@@ -132,7 +226,7 @@ window.onload = function() {
 <body>
 
 <div id="videoIcerik">
-  <video autoplay muted loop id="video">
+  <video autoplay volume id="video">
     <source src="video12.mp4" type="video/mp4">
     Tarayıcınız HTML5 videosunu desteklemiyor.
 </video>
@@ -155,16 +249,13 @@ window.onload = function() {
 <br>
 <br>
 <br>
-<div id="videoIcerik">
-    
-    <!-- <p>Alt içerik ve açıklamalar</p> -->
-    <button id="buton" onclick="durBasla()">Anasayfaya Gitmek için 
-      <a href="anasayfa.html">
-        <br>
-        <br>
-      Buraya Tıklayın</a>
-    </button>
-</div>
+<br>
+ <a href="anasayfa.html" class="button1">
+ <span class="span1">
+ <font class="font1"> ANA 
+  <br> SAYFA </font>
+ </span>
+ </a>
 
   
      
