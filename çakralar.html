@@ -1,75 +1,366 @@
-<!DOCTYPE html>
-<link rel="icon" href="İcO1.ico" type="image/x-icon" />
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÇAKRALAR</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
+  <!DOCTYPE html>
+  <link rel="icon" href="İcO1.ico" type="image/x-icon" />
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ÇAKRALAR</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="buton_files/mbcsmbmcp.css" type="text/css" />
 
-    <script language=JavaScript >
-        document.oncontextmenu = function(){return false}
-        if(document.layers)
-        {
-          window.captureEvents(Event.MAUSEDOWN);
-          window.onmousedown = function(e)
+      <script language=JavaScript >
+          document.oncontextmenu = function(){return false}
+          if(document.layers)
           {
-            if(e.target==document)return false;
+            window.captureEvents(Event.MAUSEDOWN);
+            window.onmousedown = function(e)
+            {
+              if(e.target==document)return false;
+            }
           }
-        }
-        else
-        {
-          document.onmousedown = function(){return false}
-        }
-          </script>
-</head>
-<body>
-    <div id="mbmcpebul_wrapper" style="max-width: 851px;">
-        <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
-        <li><div class="buttonbg gradient_button gradient31" style="width: 72px;"><a href="anasayfa.html">ANASAYFA</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 85px;"><a href="hakkımızda.html">HAKKIMIZDA</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 50px;"><a href="üyelik.html">ÜYEOL</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31"><div class="arrow"><a class="button_4">GALERİ</a></div></div>
-          <ul class="img_24">
-          <li class="first_item">
-            <a class="with_img_24" href="videolar.html">
-              <img src="mbico_mbmcp_1.png" alt="" />VİDEOLAR</a></li>
-          <li class="last_item">
-            <a target="_blank" class="with_img_24" href="resimler.html">
-              <img src="mbico_mbmcp_2.png" alt="" />RESİMLER</a></li>
-          </ul></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 80px;"><div class="arrow"><a class="button_5">BURÇLAR</a></div></div>
-          <ul class="img_16">
-          <li><a class="with_img_16" href="burçnedir.html">
-            <img src="mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
-          <li><a href="koç.html">KOÇ</a></li>
-          <li><a href="boğa.html">BOĞA</a></li>
-          <li><a href="ikizler.html">İKİZLER</a></li>
-          <li><a href="yengeç.html">YENGEÇ</a></li>
-          <li><a href="aslan.html">ASLAN</a></li>
-          <li><a href="başak.html">BAŞAK</a></li>
-          <li><a href="terazi.html">TERAZİ</a></li>
-          <li><a href="akrep.html">AKREP</a></li>
-          <li><a href="yay.html">YAY</a></li>
-          <li><a href="oğlak.html">OĞLAK</a></li>
-          <li><a href="kova.html">KOVA</a></li>
-          <li class="last_item"><a href="balık.html">BALIK</a></li>
-          </ul></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 69px;"><a href="ritüeller.html">RİTÜELLER</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 87px;"><a href="falçeşitleri.html">FAL ÇEŞİTLERİ</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 73px;"><a href="çakralar.html">ÇAKRALAR</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 71px;"><a href="bioenerji.html">BİO ENERJİ</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31" style="width: 58px;"><a href="iletişim.html">İLETİŞİM</a></div></li>
-        <li><div class="buttonbg gradient_button gradient31"><a href="randevu.html">RANDEVU</a></div></li>
-        </ul>
-      </div>
-      <!-- Menus will work without this javascript file. It is used only for extra
-           effects, improved usability, compatibility with very old web browsers
-           and support for touch screen devices. -->
-      <script type="text/javascript" src="mbjsmbmcp.js"></script>
-      
-</body>
-</html>
+          else
+          {
+            document.onmousedown = function(){return false}
+          }
+            </script>
+            <style>
+
+              body{
+                background-color: fuchsia;
+
+              }
+              .başlık{
+                width: 100%;
+                height: 520px;
+                background-color: transparent;
+                position: relative;
+                top: 50px;
+                border-radius: 20px
+              }
+              .paragraf{
+                width: 45%;
+                height: 520px;
+                background-color: pink;
+                border-radius: 20px;
+                
+                overflow: auto;
+              }
+
+              .paragraf2{
+                width: 45%;
+                height: 520px;
+                background-color: aqua;
+                border-radius: 20px;
+                position: relative;
+                left: 53%;
+                top: -100%;
+                
+                overflow: auto;
+                
+              }
+              .p1{
+                text-align: center;
+                font-size: large;
+                text-decoration: underline;
+                color: red;
+                
+              }
+              .p2{
+                text-align: center;
+              }
+              .p3{
+                text-align: center;
+                font-size: large;
+                text-decoration: underline;
+                color: red;
+              }
+              .p4{
+                text-align: center;
+              }
+              .logo{
+                text-align: center;
+                font-size: 105px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: aqua;
+              }
+              .başlık2{
+               width: 100%;
+               height: 550px;
+               background-color: aquamarine;
+               border-radius: 20px;
+               overflow: auto;
+               position: relative;
+               top: 100px;
+              }
+
+            </style>
+  </head>
+  <body>
+      <div id="mbmcpebul_wrapper" style="max-width: 851px;">
+          <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
+          <li><div class="buttonbg gradient_button gradient31" style="width: 72px;"><a href="anasayfa.html">ANASAYFA</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 85px;"><a href="hakkımızda.html">HAKKIMIZDA</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 50px;"><a href="üyelik.html">ÜYEOL</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31"><div class="arrow"><a class="button_4">GALERİ</a></div></div>
+            <ul class="img_24">
+            <li class="first_item">
+              <a class="with_img_24" href="videolar.html">
+                <img src="buton_files/mbico_mbmcp_1.png" alt="" />VİDEOLAR</a></li>
+            <li class="last_item">
+              <a target="_blank" class="with_img_24" href="resimler.html">
+                <img src="buton_files/mbico_mbmcp_2.png" alt="" />RESİMLER</a></li>
+            </ul></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 80px;"><div class="arrow"><a class="button_5">BURÇLAR</a></div></div>
+            <ul class="img_16">
+            <li><a class="with_img_16" href="burçnedir.html">
+              <img src="buton_files/mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
+            <li><a href="koç.html">KOÇ</a></li>
+            <li><a href="boğa.html">BOĞA</a></li>
+            <li><a href="ikizler.html">İKİZLER</a></li>
+            <li><a href="yengeç.html">YENGEÇ</a></li>
+            <li><a href="aslan.html">ASLAN</a></li>
+            <li><a href="başak.html">BAŞAK</a></li>
+            <li><a href="terazi.html">TERAZİ</a></li>
+            <li><a href="akrep.html">AKREP</a></li>
+            <li><a href="yay.html">YAY</a></li>
+            <li><a href="oğlak.html">OĞLAK</a></li>
+            <li><a href="kova.html">KOVA</a></li>
+            <li class="last_item"><a href="balık.html">BALIK</a></li>
+            </ul></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 69px;"><a href="ritüeller.html">RİTÜELLER</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 87px;"><a href="falçeşitleri.html">FAL ÇEŞİTLERİ</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 73px;"><a href="çakralar.html">ÇAKRALAR</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 71px;"><a href="bioenerji.html">BİO ENERJİ</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31" style="width: 58px;"><a href="iletişim.html">İLETİŞİM</a></div></li>
+          <li><div class="buttonbg gradient_button gradient31"><a href="randevu.html">RANDEVU</a></div></li>
+          </ul>
+        </div>
+        <!-- Menus will work without this javascript file. It is used only for extra
+            effects, improved usability, compatibility with very old web browsers
+            and support for touch screen devices. -->
+        <script type="text/javascript" src="buton_files/mbjsmbmcp.js"></script>
+        <br>
+        <br>
+        <br>
+<div class="logo">
+  ÇAKRALAR
+</div>
+
+
+  <div class="başlık">
+    <div class="paragraf">
+      <p class="p1">
+        Çakra Nedir, Çakralar Nasıl Açılır?
+      </p>
+      <p class="p2">
+          
+    Son zamanlarda bitkinlik, dengesiz ruh hali, 
+    kendinize yabancılık gibi sorunlar yaşıyorsanız 
+    sebebi vücudunuzdaki enerji akışı dengesizliği, 
+    yani çakralarınızın doğru çalışmaması olabilir.
+
+     Peki çakra nedir? Bedendeki çakra merkezleri hangileri? 
+     Hangi çakra neyi temsil ediyor? 
+     Çakraların tıkalı olduğu nasıl anlaşılır? 
+     Bu yazıda çakralarla ilgili merak ettiğiniz 
+     pek çok şeyi bulabilirsiniz.
+    
+
+    Çakra Nedir?
+    
+
+    Hindu gelenekleri ve bazı inanç sistemleri, 
+    insanda bulunan enerjiyi tüm vücuda dağıtan 
+    enerji noktalarını çakra olarak adlandırır. 
+    Sanskritçede çakra tekerlek, çark anlamına gelir.
+     Bedenimizde enerji akışını dengeleyen 7 ana çakra bulunur. 
+     Çakraların sağlıklı çalışması için açık olması gerekir.
+      Herhangi bir çakrada dengesizlik olduğunda 
+      enerji akışı sekteye uğrar ve tıkalı çakranın 
+      temsil ettiği alanlarda bedensel, 
+      ruhsal ve zihinsel bir takım rahatsızlıklar ortaya çıkar. 
+      Çakraların açık, 
+      enerji akışının sağlıklı olup olmadığını anlayabilmek için
+       her bir çakranın temsil ettiği alanları bilmek gerekir.
+        </p>
+    </div>
+    <div class="paragraf2">
+      <p class="p3">
+        Çakraların Tıkalı Olduğu Nasıl Anlaşılır?
+ 
+
+
+      </p>
+      <p class="p4">
+        Ruhsal, zihinsel ve fiziksel sağlığı dengeleyen 
+çakra enerji noktaları doğru çalışmadığında korku, 
+güvensizlik, köksüzlük, öfke, küskünlük, 
+dünyaya yabancılık gibi olumsuz hisler duyabilirsiniz. 
+Fiziksel olarak sindirim, mide sorunları, tiroid, 
+sinüzit gibi rahatsızlıklar yaşayabilirsiniz. 
+Her çakranın temsil ettiği blokaj belirtisi faklıdır.
+
+ 
+
+<p></p>●    Kök çakrada blokaj olması durumunda güvensizlik, 
+ait hissedememe, dış onay ihtiyacı, 
+sabırsızlık ve önyargı hissedersiniz. 
+Yaşamdan tam olarak keyif alamazsınız.
+
+ 
+
+<p></p>●      Sakral çakradaki dengesizlik kendini bedenini sevmeme,
+ özgüvensizlik, akışa bırakamama, katılık, soğukluk, 
+ cinsel problemler ve hormonal dengesizlikler ile gösterir.
+
+ 
+
+<p></p>●      Solar Plexus çakranız tıkalıysa topluluk önünde 
+konuşmaktan çekinir,
+ kendinizi değersiz hissedersiniz. 
+ Sürekli plan yaparsınız fakat bu planları 
+ hayata geçirmekte zorlanırsınız. Depresyona yatkın olursunuz.
+
+ 
+
+<p></p>●      Kalp çakrasının kapalı olması durumunda hayata esnek 
+bakabilme yetisi, empati, sevgi, affedicilik duyguları azalır. 
+Bunların yerini merhametsizlik, kıskançlık gibi duygular alır.
+
+ 
+
+<p></p>●      Boğaz çakrası doğru çalışmıyorsa hayır demekte, 
+sağlıklı sınır çizmekte ve genel olarak kendinizi 
+ifade etmekte zorlanırsınız. 
+Kronik boyun ağrılarından muzdarip olabilirsiniz.   
+
+ 
+
+<p></p>●      Bilgelik gözünüz yani alın çakranız tıkalıysa içgörü kaybı,
+ uykusuzluk, unutkanlık, kafa karışıklığı, algı bozukluğu, 
+ odaklanamama gibi problemler yaşayabilirsiniz.
+
+ 
+
+<p></p>●      Taç çakranın tıkalı olduğu derin ilişkiler kuramama, 
+kendini gerçekleştirememe, öz benlikten kopuk hissetme,
+ kendine yabancılık, inançsızlık 
+ hissi gibi durumlardan anlaşılabilir.
+      </p>
+    </div>
+  </div>
+
+<div class="başlık2">
+  
+ <p class="p5">
+  7 Çakra ve Özellikleri
+ 
+
+<p></p>●      Kök çakra:
+Birinci ve en yoğun enerjili çakradır. 
+Kuyruk sokumunda bulunur ve rengi kırmızıdır. 
+Sembolü dört yapraklı nilüfer çiçeğidir.
+ Varoluşun temelini, güvenliği, 
+ hayata bağlığı, aidiyet duygusunu temsil eder. 
+ Açık olduğunda kendinizi dünyada güvende hissedersiniz. 
+ Bu çakra tıkalı olduğunda hissedilen duygu korkudur. 
+ Maddi sıkıntılar yaşanması, 
+ sindirim sistemi rahatsızlıkları da buradaki 
+ dengesizliğe işaret eder.
+
+ 
+
+<p></p>●     Sakral çakra:
+Turuncu renkteki bu çakra 
+göbek deliğinin iki parmak altında yer alır 
+ve altı yapraklı nilüfer çiçeği ile sembolize edilir. 
+Cinselliği, haz duygusunu, yaratıcılığı ve 
+hayal gücünü temsil eder. 
+Tıkalı olduğunda hissedilen 
+duygu suçluluk duygusu ve kurban psikolojisidir. 
+Sakral çakranız doğru çalışıyorsa yaratıcı
+ yönünüzü rahatça ifade edersiniz. 
+ İlişkilerinizde zorlanıyorsanız ve cinsel 
+ isteksizliğiniz varsa bu çakranızda blokaj olabilir. 
+ İdrar yolları, böbrek ve üreme organları sorunları da
+  tıkanıklığa işaret eder.
+
+ 
+
+<p></p>●      Solar Pleksus çakra:
+Göbek deliğinin üç parmak üzerindedir. 
+Rengi sarı, sembolü sekiz yapraklı nilüfer çiçeğidir. 
+Güneşten esinlenilen sarı renk cesaret, güç, dayanıklılık, 
+özsaygı, empati ve iradeyi temsil eder.
+ Bloke olması durumunda utanç duygusu, 
+ özgüven eksikliği, 
+ depresif ruh hali ve aşırı yorgunluk hissedilir. 
+ Diyabet, ülser gibi karaciğer, mide, 
+ pankreas sorunları görülebilir. 
+
+ 
+
+<p></p>●      Kalp çakrası: 
+Rengi yeşildir ve göğüs kafesinin tam ortasında yer alır. 
+10-12 yapraklı nilüfer çiçeği ile sembolize edilir. 
+Huzurun, aşkın ve sevginin temsilcisidir. 
+Doğru çalıştığında kendinizi dingin, 
+huzurlu, barışçıl ve sevgi dolu hissedersiniz. 
+Keder, öfke, küskünlük, kıskançlık, hınç gibi 
+uyguları sık sık yaşıyorsanız 
+kalp çakranızda blokaj olabilir. 
+Solunum yollarını ve akciğeri temsil eder.
+
+ 
+
+<p></p>●      Boğaz çakrası:  
+On altı yapraklı nilüfer çiçeği ile temsil edilen 
+bu çakra boğaz bölgesinde bulunur. 
+Sağlıklı iletişimi ve dürüstlüğü ifade eder. 
+Bu çakranız açıksa kendinizi iyi ifade eder, 
+sağlıklı iletişim kurarsınız.
+ Açık sözlü olmaktan korkmazsınız. 
+ Temsil ettiği zıt kavram yalandır. 
+ Kendinizi açıkça ifade etmekte zorlanıyorsanız 
+ boğaz çakranızdaki blokajın giderilmesi gerekiyor olabilir. 
+ Ses telleri, guatr, tiroid, boyun ağrısı 
+ bu çakra ile temsil edilir.
+
+ 
+
+<p></p>●      Alın çakrası: 
+3. göz çakrası da denilen bu çakranın rengi morumsu mavi, 
+çiçeği yüz yapraklı nilüferdir. 
+İçsel bilgeliği, sezgileri, durugörüyü, 
+telepatiyi, 
+algılama gücünü ve odaklanma becerisini temsil eder.
+ Alın çakrası sağlıklı çalışan kişiler 
+ maddi ve manevi dünya arasında denge kurabilirler. 
+ Hayattaki pek çok olayın iç yüzünü göremeyip yanıldığınızı, 
+ sıklıkla hatalı kararlar aldığınızı düşünüyorsanız
+  alın çakranızda blokaj olabilir. 
+  Bu çakra tıkalı olduğunda baş ağrısı, sinüzit,
+   görme ve işitme kaybı gibi sorunlar görülebilir.
+
+ 
+
+<p></p>●      Taç Çakra: 
+Kafanın tepe noktasında bulunur, 
+mor renkle ve bin yapraklı nilüfer çiçeği ile temsil edilir. 
+Öz benliği, ilahi gücü, 
+gerçek yaşam amacını, 
+anda kalabilmeyi ve bilinçli farkındalığı ifade eder. 
+Bloke olması durumunda fiziksel dünyaya, 
+maddi konulara aşırı bağlılık görülür. 
+Öğrenmede güçlük çekmek, 
+kendine yabancılık gibi problemler 
+yaşıyorsanız taç çakranızın enerjisi doğru çalışmıyor olabilir.
+ </p>
+  </div>
+
+
+
+  </body>
+  </html>
