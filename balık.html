@@ -8,7 +8,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
+<link rel="stylesheet" href="buton_files/mbcsmbmcp.css" type="text/css" />
 <script language=JavaScript >
   document.oncontextmenu = function(){return false}
   if(document.layers)
@@ -46,10 +46,14 @@
         border-radius: 20px;
     }
     .vid1{
-        width: 50%;
+        width: 40%;
         height: 270px;
         background-color: #77777777;
         border-radius: 20px;
+        position: relative;
+        top: 185px;
+        text-align: center;
+        overflow: auto;
     }
     .vid2{
         width: 100%;
@@ -57,12 +61,12 @@
         border-radius: 20px;
     }
     .özellik1{
-        width: 50%;
+        width: 40%;
         height: 270px;
         border-radius: 20px;
         background-color: transparent;
         position: relative;
-        left: 50%;
+        left: 60%;
         top: -30%;
     }
     .özellik{
@@ -72,13 +76,15 @@
         border-radius: 20px;
         text-align: center;
         line-height: 30px;
-        letter-spacing: 7px;
+        letter-spacing: 3px;
     }
     .yazı{
         width: 100%;
         height: 240px;
         background-color: #ba68c8;
         border-radius: 20px;
+        text-align: center;
+        overflow: auto;
     }
     .yorum1{
         width: 100%;
@@ -110,59 +116,190 @@
     text-align: center;
     background-color: transparent;
 }
+div.t_menu{
+ width: 100%;
+}
+.font1{
+   font-size: 9px;
+}
+.font2{
+   font-size: 9px;
+   letter-spacing: 6px;
+}
+.font3{
+   font-size: 11px;
+}
+
+.font5{
+   letter-spacing: 2.5px;
+}
+
+.font7{
+   letter-spacing: 4px;
+}
+
+   ul {
+    list-style-type: georgian;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #88888888;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+li {
+    display:inline-block;
+
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 11px 7px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:teal;
+    color: aqua;
+}
+
+ul li ul {
+    background-color:#55555555;
+    display:none;
+    position:absolute;
+    width:100px;
+}
+
+ul li:hover ul{
+    display:inline-block;
+}
+li ul li {
+    display:block;
+}
+.öykü{
+    width: 100%;
+    height: 30px;
+    background-color: teal;
+    border-radius: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    position: relative;
+    top: -0px;
+    text-align: center;
+}
+     
+ .log1{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  border-radius: 50%;
+  left: 40%;
+  top: -3%;
+ }
+
 
     </style>
 </head>
 <body>
-    <br>
-    <div id="mbmcpebul_wrapper" style="max-width: 851px;">
-      <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
-      <li><div class="buttonbg gradient_button gradient31" style="width: 72px;"><a href="anasayfa.html">ANASAYFA</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 85px;"><a href="hakkımızda.html">HAKKIMIZDA</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 50px;"><a href="üyelik.html">ÜYEOL</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31"><div class="arrow"><a class="button_4">GALERİ</a></div></div>
-        <ul class="img_24">
-        <li class="first_item">
-          <a class="with_img_24" href="videolar.html">
-            <img src="mbico_mbmcp_1.png" alt="" />VİDEOLAR</a></li>
-        <li class="last_item">
-          <a target="_blank" class="with_img_24" href="resimler.html">
-            <img src="mbico_mbmcp_2.png" alt="" />RESİMLER</a></li>
+  <ul>
+    <li><a href="anasayfa.html">Ana sayfa</a></li>
+    <li><a href="hakkımızda.html">Hakkımızda</a></li> 
+    <li><a href="üyelik.html">Üye OL</a></li>
+  </li>
+  <li><a href="#">Galeri</a>
+    <ul>
+    <li><a href="videolar.html">VİDEO</a></li>
+    <li><a href="resimler.html">RESİM</a></li>
+     </li>
+    </ul></li>
+    <li><a href="#Ders">Burçlar</a>
+  <ul>
+    <li class="first_item">
+      <a class="with_img_16" href="burçnedir.html">
+        <img src="buton_files/mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
+        <li><a href="falvideo.html">VİDEO</a></li>
+    <li><a href="falresim.html">RESİM</a></li>
+    <li><a href="koç.html">KOÇ</a></li>
+      <li><a href="boğa.html">BOĞA</a></li>
+      <li><a href="ikizler.html">İKİZLER</a></li>
+      <li><a href="yengeç.html">YENGEÇ</a></li>
+      <li><a href="aslan.html">ASLAN</a></li>
+      <li><a href="başak.html">BAŞAK</a></li>
+      <li><a href="terazi.html">TERAZİ</a></li>
+      <li><a href="akrep.html">AKREP</a></li>
+      <li><a href="yay.html">YAY</a></li>
+      <li><a href="oğlak.html">OĞLAK</a></li>
+      <li><a href="kova.html">KOVA</a></li>
+      <li class="last_item"><a href="balık.html">BALIK</a></li>
+  </ul>
+  </li>
+  <li><a href="#Ders">Çakralar</a>
+    <ul>
+      <li class="first_item">
+        <a class="with_img_16" href="çakralar.html">
+          <img src="buton_files/mbico_mbmcp_3.png" alt="" />ÇAKRA NEDİR</a></li>
+      <li><a href="kökçakra.html">1.KÖK ÇAKRA</a></li>
+        <li><a href="sakralçakra.html">2.SAKRAL ÇAKRA</a></li>
+        <li><a href="solarpleksus.html">3.SOLAR PLEKSUS ÇAKRA</a></li>
+        <li><a href="kalpçakrası.html">4.KALP ÇAKRASI</a></li>
+        <li><a href="boğazçakrası.html">5.BOĞAZ ÇAKRASI</a></li>
+        <li><a href="alınçakrası.html">6.ALIN ÇAKRASI</a></li>
+        <li><a href="taççakra.html">7.TAÇ ÇAKRA</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Ritüeller</a>
+      <ul>
+      <li><a href="ritüeller.html">RİTÜEL NEDİR</a></li>
+      <li><a href="ritüelvideo.html">VİDEO</a></li>
+      <li><a href="ritüelresim.html">RESİM</a></li>
+       </li>
+      </ul></li>
+      <li><a href="#">Fallar</a>
+        <ul>
+        <li><a href="falnedir.html">FAL NEDİR</a></li>
+        <li><a href="kahvefalı.html">KAHVE FALI</a></li>
+        <li><a href="tarotfalı.html">TAROT</a></li>
+        <li><a href="falvideo.html">VİDEO</a></li>
+        <li><a href="falresim.html">RESİM</a></li>
+         </li>
         </ul></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 80px;"><div class="arrow"><a class="button_5">BURÇLAR</a></div></div>
-        <ul class="img_16">
-        <li><a class="with_img_16" href="burçnedir.html">
-          <img src="mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
-        <li><a href="koç.html">KOÇ</a></li>
-        <li><a href="boğa.html">BOĞA</a></li>
-        <li><a href="ikizler.html">İKİZLER</a></li>
-        <li><a href="yengeç.html">YENGEÇ</a></li>
-        <li><a href="aslan.html">ASLAN</a></li>
-        <li><a href="başak.html">BAŞAK</a></li>
-        <li><a href="terazi.html">TERAZİ</a></li>
-        <li><a href="akrep.html">AKREP</a></li>
-        <li><a href="yay.html">YAY</a></li>
-        <li><a href="oğlak.html">OĞLAK</a></li>
-        <li><a href="kova.html">KOVA</a></li>
-        <li class="last_item"><a href="balık.html">BALIK</a></li>
-        </ul></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 69px;"><a href="ritüeller.html">RİTÜELLER</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 87px;"><a href="falçeşitleri.html">FAL ÇEŞİTLERİ</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 73px;"><a href="çakralar.html">ÇAKRALAR</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 71px;"><a href="bioenerji.html">BİO ENERJİ</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 58px;"><a href="iletişim.html">İLETİŞİM</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31"><a href="randevu.html">RANDEVU</a></div></li>
-      </ul>
-    </div>
-    <!-- Menus will work without this javascript file. It is used only for extra
-         effects, improved usability, compatibility with very old web browsers
-         and support for touch screen devices. -->
-    <script type="text/javascript" src="mbjsmbmcp.js"></script>
-     
+        <li><a href="#">BioEnerji</a>
+          <ul>
+          <li><a href="bioenerjinedir.html">BİOENERJİ NEDİR</a></li>
+          <li><a href="bioenerjivideo.html">VİDEO</a></li>
+          <li><a href="bioenerjiresim.html">RESİM</a></li>
+           </li>
+          </ul></li>
+          <li><a href="#">Şamanlık</a>
+            <ul>
+            <li><a href="şaman.html">ŞAMANLIK NEDİR</a></li>
+            <li><a href="şamanvideo.html">VİDEO</a></li>
+            <li><a href="şamanresim.html">RESİM</a></li>
+             </li>
+            </ul></li>
+            <li><a href="#">Şifalanma</a>
+              <ul>
+              <li><a href="şifa.html">ŞİFALANMA NEDİR</a></li>
+              <li><a href="şifavideo.html">VİDEO</a></li>
+              <li><a href="şifaresim.html">RESİM</a></li>
+               </li>
+              </ul></li>
+        <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+ 
     <br>
    <div class="resim">
-    <img src="balık.png" alt="" width="300">
+    <img style="border-radius: 20px;" src="balık2.jpg" alt="" width="300">
    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -172,13 +309,160 @@
     <br>
  <div class="pano">
 <div class="vid1">
-    <video class="vid2" src="video14.mp4" muted controls="controls">
-
-    </video>
+  <div class="öykü">Balık Burcu Öyküsü</div>
+  Balık burcunun duygusallığı, hassaslığı ve güzelliği kendisiyle özdeşleştirilen ve bu burcun yönet
+  konumunda olan Denizler Tanrısı Neptün'e eş tutulmuştur. Roma mitinde Aşk Tanrısı olarak ge
+  Venüs ve Cupid, yunan mitinde karşımıza Afrodit ve Eros olarak çıkarlar. Hikayeye göre, Venüs ve Cu
+  ateş alan bir canavar tarafından kovalanıyorlardı. Canavarın denize giremeyeceğini düşün
+  kendilerini balığa döndürdüler. Denize atlamadan önce de bir iple kendilerini birbirlerine bağladıla
+  böylece asla birbirlerinden ayrılmayacaklardı. Balık burcunun önceki yöneticisi Jüpiter ise bu baş
+  kaçışı görüp, onları yıldızların arasında iki balık olarak konumlandırdı. Bu mitoloji bize, Balık burcun
+  aşkına ne kadar önem verdiğini ve bencilce değil, cömert bir şekilde hareket ettiğini gösteriyor.
 </div>
+<img class="log1" src="balık4.jpg" alt="">
 <div class="özellik1">
 <div class="özellik"> BALIK ÖZELLİKLER</div>
-<div class="yazı"></div>
+<div class="yazı">
+<p></p>
+Elementi: Su
+<p></p>
+Niteliği: Değişken
+<p></p>
+Gezegeni: Jüpiter
+<p></p>
+Rengi: Beyaz, lavanta
+<p></p>
+Taşı: Ay taşı
+<p></p>
+Günü: Perşembe
+<p></p>
+Balık burcu özellikleri: 
+Hassas, duyarlı, empatik, vicdanlı, duyarlı, 
+sanatsal, hayırsever, yardımsever, kolay etkilenen
+<p></p>
+Balık burcu erkeği: 
+Etrafında olan biten her şeyden ve etrafındaki herkesten 
+kolayca etkilenebilen hassas kişilerdir. 
+<p></p>
+Tam olarak anlaşılamayan, 
+kendilerini de belirli kalıplar içinde tanımlayamayan muğlak, 
+gizemli, karmaşık yönleri vardır. Şiire ve müziğe yatkın, 
+romantik erkeklerdir. 
+<p></p>
+Balık burcu kadını: 
+Masalsı, büyüleyici bir güzelliğe sahip olabilir. 
+<p></p>
+Gözleri anlamlı, derin ve oldukça etkileyicidir. 
+<p></p>
+Sinema aktrisi havasında olabilir. Giyinmeye, 
+makyaja meraklıdır. Hassas ve alıngandır 
+ancak her ne kadar fazlaca etki altında 
+kalsa da bir şekilde zor durumlardan sıyrılmasını, 
+kurtulmasını bilir. Akışta yaşar.
+<p></p>
+Tarzı: 
+Şekli, tarzı ve kesimi çok belli olmayan giysiler, 
+açık renkler, beyaz kıyafetler, romantik, 
+şairane giysiler, buğulu, belirsiz, 
+karmaşık görünümü tamamlayan aksesuarlar
+<p></p>
+Bedende temsil ettiği bölge: Ayaklar
+<p></p>
+Anlaştığı burçlar: Başak, Akrep, Yengeç
+<p></p>
+Anlaşamadığı burçlar: Kova, Oğlak, Koç
+<p></p>
+Burç uyumu:
+<p></p>
+Balık - Koç Uyumu
+<p></p>
+Balık - Boğa Uyumu
+<p></p>
+Balık - İkizler Uyumu
+<p></p>
+Balık - Yengeç Uyumu
+<p></p>
+Balık - Aslan Uyumu
+<p></p>
+Balık - Başak Uyumu
+<p></p>
+Balık - Terazi Uyumu
+<p></p>
+Balık - Akrep Uyumu
+<p></p>
+Balık - Yay Uyumu
+<p></p>
+Balık - Oğlak Uyumu
+<p></p>
+Balık - Kova Uyumu
+<p></p>
+Balık - Balık Uyumu
+<p></p>
+Olumlu yönleri: Fedakar, cefakar, duygusal, sezgisel,
+ merhametli, sanatçı ruhlu, hassas, inançlı, mistik
+<p></p>
+Olumsuz yönleri: Zayıf, hassas, kırılgan, 
+mağdur, sulugöz, dağınık, kolay yönlendirilebilen, 
+tutarsız, bağımlı
+<p></p>
+Aşık Balık: Balık burcu bir sevgiliniz 
+varsa arkasını toplamanız gerekebilir. 
+<p></p>
+Zira tüm dış etkilere açıktır, 
+herkese acır, herkes için bir şeyler 
+yapmak ister, kendini kolayca feda edebilir. 
+<p></p>
+İyi niyeti ve vicdanı başkaları tarafından 
+kolayca kötüye kullanılabilir. 
+<p></p>
+Ondan beklentisi olan etrafında 
+çok fazla kişi vardır. 
+<p></p>
+Duygusal ve fiziksel dağınıklığını
+ toplamak, onu maddi dünyayla buluşturmak size kalabilir. 
+<p></p>
+ Bu durum sizi aşırı yorsa da onun romantizmi, şiirleriyle, 
+ bestelediği, söylediği müzikle, yaptığı resimlerle 
+ kendinizden geçebilirsiniz. Size çok ulvi ve evrensel bir 
+ dünyanın kapılarını açabilir. 
+<p></p>
+ Ancak ayaklarınızın yere 
+ sağlam bastığından her zaman emin olabilirsiniz.
+<p></p>
+  Zira aksi halde derin bir uyku, uyuşukluk durumuna geçebilir, 
+  olayların akışına siz de kapılıp gidebilirsiniz.
+<p></p>
+Anne Balık: Oldukça hisli ve duygusal bir annedir. 
+<p></p>
+Gözyaşları sizin için akmaya her zaman hazırdır. 
+<p></p>
+Kendini sizin için feda edebilir, 
+her türlü ihtiyacınızı karşılamak için kendinden vazgeçebilir.
+<p></p>
+Bu durum suçluluk duymanıza yol açabilir. 
+<p></p>
+Annenizin hassaslığı ve kırılganlığı onun dış etkilere, 
+başka kişilere ve hastalıklara karşı da zayıf kılar.
+<p></p>
+ Her zaman yanında ve arkasında olmanız gerekebilir.
+<p></p>
+Baba Balık: Kendisini ailesi ve çocukları için feda edebilir. 
+Onların refahı ve mutluluğu için zarar görsün veya 
+görmesin her şeyi yapmaya hazır ve nazırdır. 
+Kurban durumuna düşebilir, hastalıklara karşı meyilli olabilir. 
+Ailesine karşı vicdanı ve merhameti sonsuzdur.
+<p></p>
+Çocuk Balık: Balık burcu bir çocuğunuz varsa hassas, 
+kırılgan, hastalıklara, alerjilere meyilli 
+bünyesine karşı her daim tetikte olmalısınız. 
+<p></p>
+Hassas ve duyarlı ruhunu sanata, müziğe, 
+resme yönlendirebilirsiniz. Sezgileri, 
+mistik yanı oldukça güçlüdür. 
+<p></p>
+Geniş ve zengin bir hayalgücü vardır, 
+oldukça fazla ve etkili rüyalar görebilir.
+</div>
 </div>
 <div class="yorum1">
 <div class="başlık">BALIK YORUM</div>
