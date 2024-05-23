@@ -8,8 +8,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="mbcsmbmcp.css" type="text/css" />
-    <script language=JavaScript >
+    <link rel="stylesheet" href="buton_files/mbcsmbmcp.css" type="text/css" />
+        <script language=JavaScript >
   document.oncontextmenu = function(){return false}
   if(document.layers)
   {
@@ -46,10 +46,14 @@
         border-radius: 20px;
     }
     .vid1{
-        width: 50%;
+        width: 40%;
         height: 270px;
         background-color: #77777777;
         border-radius: 20px;
+        position: relative;
+        top: 187px;
+        overflow: auto;
+        text-align: center;
     }
     .vid2{
         width: 100%;
@@ -57,12 +61,12 @@
         border-radius: 20px;
     }
     .özellik1{
-        width: 50%;
+        width: 40%;
         height: 270px;
         border-radius: 20px;
         background-color: transparent;
         position: relative;
-        left: 50%;
+        left: 60%;
         top: -30%;
     }
     .özellik{
@@ -72,13 +76,15 @@
         border-radius: 20px;
         text-align: center;
         line-height: 30px;
-        letter-spacing: 7px;
+        letter-spacing: 3px;
     }
     .yazı{
         width: 100%;
         height: 240px;
         background-color: #ba68c8;
         border-radius: 20px;
+        text-align: center;
+        overflow: auto;
     }
     .yorum1{
         width: 100%;
@@ -110,59 +116,194 @@
     text-align: center;
     background-color: transparent;
 }
+div.t_menu{
+ width: 100%;
+}
+.font1{
+   font-size: 9px;
+}
+.font2{
+   font-size: 9px;
+   letter-spacing: 6px;
+}
+.font3{
+   font-size: 11px;
+}
+
+.font5{
+   letter-spacing: 2.5px;
+}
+
+.font7{
+   letter-spacing: 4px;
+}
+
+   ul {
+    list-style-type: georgian;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #88888888;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+li {
+    display:inline-block;
+
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 11px 7px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:teal;
+    color: aqua;
+}
+
+ul li ul {
+    background-color:#55555555;
+    display:none;
+    position:absolute;
+    width:100px;
+}
+
+ul li:hover ul{
+    display:inline-block;
+}
+li ul li {
+    display:block;
+}
+
+
+.öykü{
+    width: 100%;
+    height: 30px;
+    background-color: teal;
+    border-radius: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    position: relative;
+    top: -0px;
+    text-align: center;
+}
+     
+ .log1{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  border-radius: 50%;
+  left: 40%;
+  top: -3%;
+ }
 
     </style>
 </head>
 <body>
-    <br>
-    <div id="mbmcpebul_wrapper" style="max-width: 851px;">
-      <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu">
-      <li><div class="buttonbg gradient_button gradient31" style="width: 72px;"><a href="anasayfa.html">ANASAYFA</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 85px;"><a href="hakkımızda.html">HAKKIMIZDA</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 50px;"><a href="üyelik.html">ÜYEOL</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31"><div class="arrow"><a class="button_4">GALERİ</a></div></div>
-        <ul class="img_24">
-        <li class="first_item">
-          <a class="with_img_24" href="videolar.html">
-            <img src="mbico_mbmcp_1.png" alt="" />VİDEOLAR</a></li>
-        <li class="last_item">
-          <a target="_blank" class="with_img_24" href="resimler.html">
-            <img src="mbico_mbmcp_2.png" alt="" />RESİMLER</a></li>
+  <ul>
+    <li><a href="anasayfa.html">Ana sayfa</a></li>
+    <li><a href="hakkımızda.html">Hakkımızda</a></li> 
+    <li><a href="üyelik.html">Üye OL</a></li>
+  </li>
+  <li><a href="#">Galeri</a>
+    <ul>
+    <li><a href="videolar.html">VİDEO</a></li>
+    <li><a href="resimler.html">RESİM</a></li>
+     </li>
+    </ul></li>
+    <li><a href="#Ders">Burçlar</a>
+  <ul>
+    <li class="first_item">
+      <a class="with_img_16" href="burçnedir.html">
+        <img src="buton_files/mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
+        <li><a href="falvideo.html">VİDEO</a></li>
+    <li><a href="falresim.html">RESİM</a></li>
+    <li><a href="koç.html">KOÇ</a></li>
+      <li><a href="boğa.html">BOĞA</a></li>
+      <li><a href="ikizler.html">İKİZLER</a></li>
+      <li><a href="yengeç.html">YENGEÇ</a></li>
+      <li><a href="aslan.html">ASLAN</a></li>
+      <li><a href="başak.html">BAŞAK</a></li>
+      <li><a href="terazi.html">TERAZİ</a></li>
+      <li><a href="akrep.html">AKREP</a></li>
+      <li><a href="yay.html">YAY</a></li>
+      <li><a href="oğlak.html">OĞLAK</a></li>
+      <li><a href="kova.html">KOVA</a></li>
+      <li class="last_item"><a href="balık.html">BALIK</a></li>
+  </ul>
+  </li>
+  <li><a href="#Ders">Çakralar</a>
+    <ul>
+      <li class="first_item">
+        <a class="with_img_16" href="çakralar.html">
+          <img src="buton_files/mbico_mbmcp_3.png" alt="" />ÇAKRA NEDİR</a></li>
+      <li><a href="kökçakra.html">1.KÖK ÇAKRA</a></li>
+        <li><a href="sakralçakra.html">2.SAKRAL ÇAKRA</a></li>
+        <li><a href="solarpleksus.html">3.SOLAR PLEKSUS ÇAKRA</a></li>
+        <li><a href="kalpçakrası.html">4.KALP ÇAKRASI</a></li>
+        <li><a href="boğazçakrası.html">5.BOĞAZ ÇAKRASI</a></li>
+        <li><a href="alınçakrası.html">6.ALIN ÇAKRASI</a></li>
+        <li><a href="taççakra.html">7.TAÇ ÇAKRA</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Ritüeller</a>
+      <ul>
+      <li><a href="ritüeller.html">RİTÜEL NEDİR</a></li>
+      <li><a href="ritüelvideo.html">VİDEO</a></li>
+      <li><a href="ritüelresim.html">RESİM</a></li>
+       </li>
+      </ul></li>
+      <li><a href="#">Fallar</a>
+        <ul>
+        <li><a href="falnedir.html">FAL NEDİR</a></li>
+        <li><a href="kahvefalı.html">KAHVE FALI</a></li>
+        <li><a href="tarotfalı.html">TAROT</a></li>
+        <li><a href="falvideo.html">VİDEO</a></li>
+        <li><a href="falresim.html">RESİM</a></li>
+         </li>
         </ul></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 80px;"><div class="arrow"><a class="button_5">BURÇLAR</a></div></div>
-        <ul class="img_16">
-        <li><a class="with_img_16" href="burçnedir.html">
-          <img src="mbico_mbmcp_3.png" alt="" />BURÇ NEDİR</a></li>
-        <li><a href="koç.html">KOÇ</a></li>
-        <li><a href="boğa.html">BOĞA</a></li>
-        <li><a href="ikizler.html">İKİZLER</a></li>
-        <li><a href="yengeç.html">YENGEÇ</a></li>
-        <li><a href="aslan.html">ASLAN</a></li>
-        <li><a href="başak.html">BAŞAK</a></li>
-        <li><a href="terazi.html">TERAZİ</a></li>
-        <li><a href="akrep.html">AKREP</a></li>
-        <li><a href="yay.html">YAY</a></li>
-        <li><a href="oğlak.html">OĞLAK</a></li>
-        <li><a href="kova.html">KOVA</a></li>
-        <li class="last_item"><a href="balık.html">BALIK</a></li>
-        </ul></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 69px;"><a href="ritüeller.html">RİTÜELLER</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 87px;"><a href="falçeşitleri.html">FAL ÇEŞİTLERİ</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 73px;"><a href="çakralar.html">ÇAKRALAR</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 71px;"><a href="bioenerji.html">BİO ENERJİ</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31" style="width: 58px;"><a href="iletişim.html">İLETİŞİM</a></div></li>
-      <li><div class="buttonbg gradient_button gradient31"><a href="randevu.html">RANDEVU</a></div></li>
-      </ul>
-    </div>
-    <!-- Menus will work without this javascript file. It is used only for extra
-         effects, improved usability, compatibility with very old web browsers
-         and support for touch screen devices. -->
-    <script type="text/javascript" src="mbjsmbmcp.js"></script>
-     
+        <li><a href="#">BioEnerji</a>
+          <ul>
+          <li><a href="bioenerjinedir.html">BİOENERJİ NEDİR</a></li>
+          <li><a href="bioenerjivideo.html">VİDEO</a></li>
+          <li><a href="bioenerjiresim.html">RESİM</a></li>
+           </li>
+          </ul></li>
+          <li><a href="#">Şamanlık</a>
+            <ul>
+            <li><a href="şaman.html">ŞAMANLIK NEDİR</a></li>
+            <li><a href="şamanvideo.html">VİDEO</a></li>
+            <li><a href="şamanresim.html">RESİM</a></li>
+             </li>
+            </ul></li>
+            <li><a href="#">Şifalanma</a>
+              <ul>
+              <li><a href="şifa.html">ŞİFALANMA NEDİR</a></li>
+              <li><a href="şifavideo.html">VİDEO</a></li>
+              <li><a href="şifaresim.html">RESİM</a></li>
+               </li>
+              </ul></li>
+        <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+   
     <br>
    <div class="resim">
-    <img src="ikizler.png" alt="" width="300">
+    <img style="border-radius: 20px;" src="ikizler2.jpg" alt="" width="300">
    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <div class="logo">İKİZLER BURCU</div>
     <br>
@@ -170,13 +311,41 @@
     <br>
  <div class="pano">
 <div class="vid1">
-    <video class="vid2" src="video14.mp4" muted controls="controls">
-
-    </video>
+  <div class="öykü">İkizler Burcu Öyküsü</div>
+  Mitolojinin ünlü ikizleri, Dioskouroi (Tanrı’nın -Zeus’un- delikanlıları) diye anılan Kastor ve Polydeukes (Latin Pollux) Sparta kraliçesi Leda’nın, babaları farklı ikiz oğulları, Troia’ya kaçırılan Helene’nin kardeşleridir. Kastor’un babası kral Tyndareos, Polydeukes’in babası ise Zeus’tu. Biri ölümlü diğeri ölümsüz olan ikizler birbirlerine çok bağlıydılar. Kastor bir çatışmada öldüğünde ölümsüz Polydeukes ölen kardeşinden ayrı kalmaya dayanamamış kardeşiyle birlikte Hades’e inmek istemişti. Yunan mitolojisine göre Zeus önce birinin ölümsüzlüğünü diğeriyle paylaştırarak günlük yaşamlarını Hades ile Olympos arasında geçirmelerine izin vermiş, sonra da onları birbirlerinden hiç ayrılmasınlar diye burçlar kuşağında onurlandırmıştır.[3]
 </div>
+<img class="log1" src="ikizler3.jpg" alt="">
 <div class="özellik1">
 <div class="özellik"> İKİZLER ÖZELLİKLER</div>
-<div class="yazı"></div>
+<div class="yazı">
+<p></p>
+  Elementi: Hava
+  <p></p>
+  Niteliği: Değişken
+  <p></p>
+  Gezegeni: Merkür
+  <p></p>
+  Rengi: Sarı, turuncu
+  <p></p>
+  Taşı: Agat
+  <p></p>
+  Günü: Çarşamba
+  <p></p>
+  İkizler burcu özellikleri: Esnek, uyumlu, çevik, konuşkan, meraklı, arkadaş canlısı
+  
+  İkizler burcu kadını: Değişime herkesten çok ihtiyacı vardır. bulunduğu ortamda çabuk sıkılır, dışarı çıkmak, hava almak ister. Özgürlüğüne karışılmamalıdır. tatlı dilli ve konuşkandır. Dost canlısı yönü etrafında pek çok kişinin bulunmasını sağlar. Akıllı ve zekidir, ne istediğini çabuk bilir ve ona hızla ulaşmak için pratik yolları kolayca bulur.
+  
+  İkizler burcu erkeği: Sevimli ve canayakındır. Beğendiği kişiyi güzel sözleri, akılcı konuşması, bilgi ve birikimiyle kolayca etkileyebilir. Gezmeyi, seyahati sever, hareketli, değişken bir hayatı tercih eder. Aşktan çabuk sıkılabilir, sadakat konusunda çok beklenti içinde olmamak gerekir, zira sürekli değişim arar hayatında. Zorlu durumlar karşısında pratik çözümleriyle yol göstericidir.
+  
+  Tarzı: En son trendlere, yeniliklere meraklıdır. Kim ne giymiş, ne takmış, sürmüş onun için önemlidir. Değişken ruh haline göre zaman zaman çarpıcı giysilerden, renksiz veya göze çarpmayan giysilere kadar geniş bir gardırobu olabilir.
+  
+  Bedende temsil ettiği bölge: Omuz, kollar, eller
+  
+  Anlaştığı burçlar: Terazi, Kova, Yay
+  
+  Anlaşamadığı burçlar: Oğlak, Yengeç, Boğa
+
+</div>
 </div>
 <div class="yorum1">
 <div class="başlık">İKİZLER YORUM</div>
